@@ -31,11 +31,11 @@ app.get('/', function(request, response) {
     console.log(resDate);
     var query = "INSERT INTO david( ip, date,num,  other) VALUES ( '" + ip + "','" + resDate + "', '1', '');";
     var pg_client = new pg.Client({
-        user: "qbksgvencpezex",
-        password: "m9RwaSrL_DMY7C9Zg9b7tYDGOb",
-        database: "d79rur5f0g55f2",
+        user: "bxyiynnefwwhey",
+        password: "21e1029f1813edc75a1a1bb0b713a693bb8beaed2949ba075156059f27455dfe",
+        database: "da11brfjnjga4d",
         port: 5432,
-        host: "ec2-54-163-240-204.compute-1.amazonaws.com",
+        host: "ec2-184-73-199-72.compute-1.amazonaws.com",
         ssl: true
     });
     pg_client.connect();
@@ -54,11 +54,11 @@ app.get('/', function(request, response) {
 app.post('/getdata', function(request, response) {
     var results = [];
     var pg_client = new pg.Client({
-        user: "qbksgvencpezex",
-        password: "m9RwaSrL_DMY7C9Zg9b7tYDGOb",
-        database: "d79rur5f0g55f2",
+        user: "bxyiynnefwwhey",
+        password: "21e1029f1813edc75a1a1bb0b713a693bb8beaed2949ba075156059f27455dfe",
+        database: "da11brfjnjga4d",
         port: 5432,
-        host: "ec2-54-163-240-204.compute-1.amazonaws.com",
+        host: "ec2-184-73-199-72.compute-1.amazonaws.com",
         ssl: true
     });
     pg_client.connect();
@@ -108,11 +108,11 @@ app.post('/sendMessage', function(request, response) {
 app.post('/deleteItem', function(request, response) {
     console.log(request.body.idm);//request.body.idm
     var pg_client = new pg.Client({
-        user: "qbksgvencpezex",
-        password: "m9RwaSrL_DMY7C9Zg9b7tYDGOb",
-        database: "d79rur5f0g55f2",
+        user: "bxyiynnefwwhey",
+        password: "21e1029f1813edc75a1a1bb0b713a693bb8beaed2949ba075156059f27455dfe",
+        database: "da11brfjnjga4d",
         port: 5432,
-        host: "ec2-54-163-240-204.compute-1.amazonaws.com",
+        host: "ec2-184-73-199-72.compute-1.amazonaws.com",
         ssl: true
     });
     pg_client.connect();

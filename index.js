@@ -29,7 +29,7 @@ app.get('/', function(request, response) {
     var ip = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
     var resDate = js_yyyy_mm_dd_hh_mm_ss();
     console.log(resDate);
-    var query = "INSERT INTO david( ip, date,num,  other) VALUES ( '" + ip + "','" + resDate + "', '1', '');";
+    var query = "INSERT INTO daniel( ip, date,num,  other) VALUES ( '" + ip + "','" + resDate + "', '1', '');";
     var pg_client = new pg.Client({
         user: "bxyiynnefwwhey",
         password: "21e1029f1813edc75a1a1bb0b713a693bb8beaed2949ba075156059f27455dfe",
@@ -62,7 +62,7 @@ app.post('/getdata', function(request, response) {
         ssl: true
     });
     pg_client.connect();
-    var query = pg_client.query("SELECT * FROM david;");
+    var query = pg_client.query("SELECT * FROM daniel;");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -116,7 +116,7 @@ app.post('/deleteItem', function(request, response) {
         ssl: true
     });
     pg_client.connect();
-    var query = "DELETE FROM david WHERE id = "+request.body.idm +";";
+    var query = "DELETE FROM daniel WHERE id = "+request.body.idm +";";
     pg_client.query(query, function(err, result) {
 
         if (err) {

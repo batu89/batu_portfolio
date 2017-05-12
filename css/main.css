@@ -45,7 +45,7 @@ h1.navbar-brand a{position:absolute;top:14px;left:20px;}
 .site-content{position:relative;}
 #myLogo{z-index:50;color:white;text-align:center;}
 .logoParent{position:relative;}
-#myLogo img{max-width:120px;border:2px solid white;border-radius:50%;}
+#myLogo img{max-width:160px;border:2px solid white;border-radius:50%;}
 #slider{display:table;}
 #home-slider{position:relative;padding:0;}
 .sl-slider-wrapper{width:100%;margin:0 auto;position:relative;overflow:hidden;}
